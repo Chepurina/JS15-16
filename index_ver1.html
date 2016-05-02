@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>      
+	<meta charset="UTF-8">
+	<title>Google Search AJAX API</title>
+	<link rel="shortcut icon" href="img/icon.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="css/styles_ver1.css" rel="stylesheet">
+</head>
+<body>
+	<div class="google">	
+		<div class="picture"><img class="logo" src="img/logo.png" alt="Logo"></div>
+		<script>
+		(function() {
+			var cx = '000308765978375027613:awsfc8beycw';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		})();
+		</script>
+		<gcse:searchbox-only></gcse:searchbox-only>
+	</div>
+</body>
+</html>
